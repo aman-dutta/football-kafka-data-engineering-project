@@ -19,6 +19,7 @@ In this project, I executed an End-To-End Data Pipeline of football related keyw
 ## Commands Used:
 
 ```
+py -3 main.py -----> The sncrape only runs with Python version 3 and above.
 bin/zookeeper-server-start.sh config/zookeeper.properties  ----> Starting Zookeeper
 Do a "sudo nano config/server.properties" - change ADVERTISED_LISTENERS to public ip of the EC2 instance  -----> For connecting with the EC2 instance
 bin/kafka-topics.sh --create --topic footballTopic --bootstrap-server {Public IP of your EC2 Instance:9092} --replication-factor 1 --partitions 1
